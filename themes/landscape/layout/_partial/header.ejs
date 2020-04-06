@@ -1,0 +1,21 @@
+<header id="header">
+  <div class="container">
+    <a id="logo" href="/">
+      <img src="/images/logo.svg" alt="" />
+    </a>
+    <nav id="main-nav">
+      <% for (var i in theme.menu){ %>
+      <a class="main-nav-link" href="#<%-theme.menu[i]%>"><%= i %></a>
+      <% } %>
+    </nav>
+    <div class="header-wrapper">
+      <button id="main-nav-btn" uk-toggle="target: #contact" type="button">
+        <span class="desktop">Contact Us</span>
+        <span class="mobile">Call Us</span>
+      </button>
+      <button id="burger" class="mobile">
+        <img src="/images/burger.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</header>

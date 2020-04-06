@@ -1,0 +1,11 @@
+<%- partial('_partial/head') %>
+<body>
+    <%- partial('_partial/form') %>  
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <section id="main"><%- page.content %></section>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

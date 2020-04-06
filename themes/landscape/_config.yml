@@ -1,0 +1,17 @@
+# Header
+menu:
+  Digital Strategy: digital-strategy
+  Digital Ads: digital-ads
+  Email Marketing: email-marketing
+  Digital Marketplaces: digital-marketplaces
+
+logo: 'assets/logo.svg'
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
