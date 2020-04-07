@@ -28,6 +28,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <%- css('css/style') %>
+    <%  if (page.template) { %>
+      <% if (page.hasCSS) { %> 
+          <%- css(`templates/${page.template}/css/page.css`) %>
+      <% } %> 
+    <% } %> 
   </head>
 </html>

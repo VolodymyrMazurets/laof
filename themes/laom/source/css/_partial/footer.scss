@@ -1,29 +1,29 @@
 #footer {
-  background: color-footer-background;
+  background: $color-footer-background;
   padding: 62px 0 220px;
-  color: color-footer;
+  color: $color-footer;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     padding: 62px 0 59px;
   }
 }
 
 #footer-title {
-  font-size: footer-size;
+  font-size: $footer-title;
   margin-bottom: 25px;
 
-  @media xs {
-    font-size: footer-size-mobile;
+  @media screen and (min-width: $xs) {
+    font-size: $footer-title-mobile;
     margin-bottom: 29px;
   }
 }
 
 #footer-list {
-  list-style;
+  list-style: none;
   display: flex;
   flex-direction: column;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     flex-direction: row;
   }
 }
@@ -31,7 +31,7 @@
 .footer-item:not(:last-child) {
   margin-bottom: 15px;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     margin-bottom: 0;
     margin-right: 154px;
   }
@@ -39,7 +39,7 @@
 
 .footer-item-title {
   margin-bottom: 4px;
-  @media xs {
+  @media screen and (min-width: $xs) {
     margin-bottom: 10px;
   }
 }
@@ -49,6 +49,6 @@
   transition: 0.2s color ease;
 
   &:hover {
-    color: N00;
+    color: $N00;
   }
 }

@@ -5,12 +5,12 @@ menu:
   Email Marketing: email-marketing
   Digital Marketplaces: digital-marketplaces
 
-logo: 'assets/logo.svg'
+img_path: /templates/laom/images/
 
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: /favicon.png
+favicon: 
 twitter:
 google_plus:
 fb_admins:

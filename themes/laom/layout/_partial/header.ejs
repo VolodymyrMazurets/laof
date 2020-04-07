@@ -1,7 +1,7 @@
 <header id="header">
   <div class="container">
     <a id="logo" href="/">
-      <img src="./images/logo.svg" alt="" />
+      <img src="<%- url_for('./images/logo.svg') %>" alt="" />
     </a>
     <nav id="main-nav">
       <% for (var i in theme.menu){ %>
@@ -9,12 +9,14 @@
       <% } %>
     </nav>
     <div class="header-wrapper">
-      <button id="main-nav-btn" uk-toggle="target: #contact" type="button">
-        <span class="desktop">Contact Us</span>
-        <span class="mobile">Call Us</span>
+      <button class="main-nav-btn desktop" uk-toggle="target: #contact" type="button">
+        <span>Contact Us</span>
       </button>
+      <a class="main-nav-btn mobile" href="tel:8185720234" type="button">
+        Call Us
+      </a>
       <button id="burger" class="mobile">
-        <img src="./images/burger.svg" alt="" />
+        <img src="<%- url_for('./images/burger.svg') %>" alt="" />
       </button>
     </div>
   </div>

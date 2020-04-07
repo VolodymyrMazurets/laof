@@ -1,12 +1,7 @@
 #header {
   padding: 20px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     padding: 61px 0;
   }
 
@@ -20,7 +15,7 @@
   width: 113px;
   height: 30px;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     width: 184px;
     height: 50px;
   }
@@ -33,18 +28,18 @@
 #main-nav {
   display: none;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     display: flex;
     align-items: center;
   }
 }
 
 .main-nav-link {
-  font-family: font-sec;
+  font-family: $font-sec;
   font-size: main-size;
   font-weight: 300;
   letter-spacing: normal;
-  color: link-color;
+  color: $link-color;
   text-decoration: none;
   margin-right: 70px;
   transition: 0.2s color ease;
@@ -63,23 +58,26 @@
   align-items: center;
 }
 
-#main-nav-btn {
+.main-nav-btn {
   padding: 0 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 31px;
   border-radius: 4px;
   background-color: #84d800;
   border: none;
-  color: N0;
-  font-family: font-sec;
-  font-size: btn-size-mobile;
+  color: $N0;
+  font-family: $font-sec;
+  font-size: $btn-size-mobile;
   transition: 0.2s background-color ease;
   margin-right: 16px;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     margin-right: 0;
     min-width: 158px;
     height: 40px;
-    font-size: main-size;
+    font-size: $main-size;
     cursor: pointer;
 
     &:hover {
@@ -98,7 +96,7 @@
 }
 
 .mobile {
-  @media xs {
+  @media screen and (min-width: $xs) {
     display: none;
   }
 }
@@ -106,7 +104,7 @@
 .desktop {
   display: none;
 
-  @media xs {
+  @media screen and (min-width: $xs) {
     display: initial;
   }
 }

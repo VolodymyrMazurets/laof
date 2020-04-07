@@ -1,11 +1,11 @@
-@import 'nib';
-@import '_variables';
 
-global-reset();
+@import '_variables';
 
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 input, button {
@@ -23,10 +23,10 @@ html, body {
 }
 
 body {
-  background: color-background;
-  font: main-size font-main;
+  background: $color-background;
+  font: $main-size $font-main;
   -webkit-text-size-adjust: 100%;
-  color: text-color;
+  color: $text-color;
 }
 
 a {
@@ -39,11 +39,11 @@ a {
 }
 
 #main {
-  padding: 115px 0 169px;
+  padding: 45px 0 169px;
   z-index: 0;
 
-  @media xs {
-    padding: 200px 0 100px;
+  @media screen and (min-width: $xs) {
+    padding: 38px 0 100px;
   }
 }
 
@@ -56,37 +56,36 @@ a {
   position: relative;
 }
 
-@media xs {
+@media screen and (min-width: $xs) {
   .container {
     max-width: 540px;
   }
 }
 
-@media md {
+@media screen and (min-width: $md) {
   .container {
     max-width: 720px;
   }
 }
 
-@media lg {
+@media screen and (min-width: $lg) {
   .container {
     max-width: 960px;
   }
 }
 
-@media xl {
+@media screen and (min-width: $xl){
   .container {
     max-width: 1140px;
   }
 }
 
-@media xxl {
+@media screen and (min-width: $xxl) {
   .container {
     max-width: 1600px;
   }
 }
 
 @import '_partial/header';
-@import 'page';
 @import '_partial/footer';
 @import '_partial/form';
